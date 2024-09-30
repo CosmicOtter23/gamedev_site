@@ -12,15 +12,15 @@ layout: base
     <div class="tab-container">
       {% if page.title == "Unity Games" %}
         <div class="tab active">Unity Games</div>
-        <a href="/projects_web" class="tab">Websites</a>
-        <a href="/projects_design" class="tab">Design Projects</a>
+        <a href="{{ site.baseurl }}/projects_web" class="tab">Websites</a>
+        <a href="{{ site.baseurl }}/projects_design" class="tab">Design Projects</a>
       {% elsif page.title == "Websites" %}
-        <a href="/projects_game" class="tab">Unity Games</a>
+        <a href="{{ site.baseurl }}/projects_game" class="tab">Unity Games</a>
         <div class="tab active">Websites</div>
-        <a href="/projects_design" class="tab">Design Projects</a>
+        <a href="{{ site.baseurl }}/projects_design" class="tab">Design Projects</a>
       {% elsif page.title == "Design Projects" %}
-        <a href="/projects_game" class="tab">Unity Games</a>
-        <a href="/projects_web" class="tab">Websites</a>
+        <a href="{{ site.baseurl }}/projects_game" class="tab">Unity Games</a>
+        <a href="{{ site.baseurl }}/projects_web" class="tab">Websites</a>
         <div class="tab active">Design Projects</div>
       {% endif %}
     </div>

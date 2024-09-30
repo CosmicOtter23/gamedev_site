@@ -11,19 +11,19 @@
 <body class="title-page"></body>
   <nav class="navbar">
     <div class="logo">
-      <a href="#">Lewis Wray</a>
+      <a href="/">Lewis Wray</a>
     </div>
     <ul class="nav-links">
-      <li><a href="/">Home</a></li>
+      <li><a href="{{ site.baseurl }}/">Home</a></li>
       <!-- <li><a href="/projects">Projects</a></li> -->
       <div class="dropdown">
         <a class="dropbtn">Projects 
           <i class="down-arrow">▼</i>
         </a>
         <div class="dropdown-content">
-          <a href="/projects_game.md">Unity Games</a>
-          <a href="/projects_web.md">Websites</a>
-          <a href="/projects_design.md">Design Projects</a>
+          <a href="{{ site.baseurl }}/projects_game.md">Unity Games</a>
+          <a href="{{ site.baseurl }}/projects_web.md">Websites</a>
+          <a href="{{ site.baseurl }}/projects_design.md">Design Projects</a>
         </div>
       </div> 
       <li><a href="#">Education</a></li>
@@ -43,6 +43,6 @@
     <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
 </body>
 </html>
