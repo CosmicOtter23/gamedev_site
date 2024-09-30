@@ -1,6 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: title_page
+title: "Lewis Wray"
+subtitle: "Programmer & Designer"
+theme: default
 ---
+

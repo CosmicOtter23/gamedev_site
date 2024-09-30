@@ -1,15 +1,31 @@
----
-layout: wrapper
-author: "Lewis"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
 
-{% for post in site.posts %}
-  <li><a style="{% if page.url == post.url %}color: red;{% endif %}" href="{{ post.url }}">{{ post.title }}</a></li>
-  <br>
-{% endfor %}
+<body class="title-page">
+  <header class="inner">
+    <h1 style="color: white;">{{ page.title | default: site.title }}</h1>
+    <h5 style="color: white;" class="subtitle">{{ page.subtitle }}</h5>
+  </header>
 
-<h1>{{ page.title }}</h1>
-<h3>{{ page.author }}</h3>
-<hr>
+  <h1>All posts</h1>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
 
-{{ content }}
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      {{ content }}
+    </section>
+  </div>
+
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+---
+layout: base
+---
+<header class="inner">
+  <h1 class="heading">{{ page.title | default: site.title }}</h1>
+  <h3 class="subheading">{{ page.subtitle }}</h3>
+</header>
+
+
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+    <div class="tab-container">
+      {% if page.title == "Unity Games" %}
+        <div class="tab active">Unity Games</div>
+        <a href="/projects_web" class="tab">Websites</a>
+        <a href="/projects_design" class="tab">Design Projects</a>
+      {% elsif page.title == "Websites" %}
+        <a href="/projects_game" class="tab">Unity Games</a>
+        <div class="tab active">Websites</div>
+        <a href="/projects_design" class="tab">Design Projects</a>
+      {% elsif page.title == "Design Projects" %}
+        <a href="/projects_game" class="tab">Unity Games</a>
+        <a href="/projects_web" class="tab">Websites</a>
+        <div class="tab active">Design Projects</div>
+      {% endif %}
+    </div>
+
+    {{ content }}
+
+    <!-- <div id="unity_projects" class="tab-content active">
+      <div>
+        <h2>Ninja Blob</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>Snowball Fight</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>Quantum Crate</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>Shadow Thief</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>The Wall</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+    </div>
+    <div id="website_projects" class="tab-content">
+      <div>
+        <h2>EdVee</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>Songdle</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>Loops Direct</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>The Game Over View</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+    </div>
+    <div id="design_projects" class="tab-content">
+      <div>
+        <h2>"Our Planet" Project</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>VE Day Flag</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>Blender Donut</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>2D Computer Graphics</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+      <hr class="dividing-line">
+      <div>
+        <h2>3D Computer Graphics</h2>
+        <p>This is the content for section 1.</p>
+      </div>
+    </div> -->
+    <div id="personal_projects" class="tab-content">
+      <!-- Include personal projects here -->
+    </div>
+    <div id="academic_projects" class="tab-content">
+      <!-- Include academic and professional projects here -->
+    </div>
+  </section>
+</div>

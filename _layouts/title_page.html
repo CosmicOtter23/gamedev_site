@@ -1,0 +1,126 @@
+---
+layout: base
+---
+<header class="inner">
+  <h1 class="title-heading">{{ page.title | default: site.title }}</h1>
+  <h3 class="title-subheading">{{ page.subtitle }}</h3>
+  <img src="assets/img/profile_pic.jpg" alt="Lewis image" class="profile_img">
+</header>
+
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+    <div>
+      <h3>Game Development</h3>
+      <p class="carousel-text">I taught myself how to program in C# and use the Unity game engine using various online resources. This provided me
+        with a basis of knowledge into how video games are designed and developed. I already had some skill with Adobe
+        Photoshop, so I used that to design graphics for the games. I intend to expand my knowledge of games development in
+        the future by learning how to use the Unreal Engine.</p>
+
+      <section class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="assets/img/quantum_crate.jpg" alt="Quantum Crate">
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/img/shadow_thief.jpg" alt="Shadow Thief">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="assets/img/ninja_blob.jpg" alt="Ninja Blob">
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/img/the_wall.jpg" alt="The Wall">
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/img/snowball_fight.jpg" alt="Snowball Fight">
+          </div>
+        </div>
+      
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </section>
+      <div class="btn-carousel">
+        <a href="/projects">
+          <button class="btn">View Projects</button>
+        </a>
+      </div>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>Web Development</h3>
+      <p class="carousel-text">I learned HTML, JavaScript, and CSS in the first year of my university course, so decided to make my own 
+        websites using these skills.</p>
+
+      <section class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="assets/img/edvee.jpg" alt="EdVee">
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/img/songdle.jpg" alt="Songdle">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="assets/img/loopsdirect.jpg" alt="Loops Direct">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="assets/img/game_over_view.jpg" alt="The Game Over View">
+          </div>
+        </div>
+      
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </section>
+      <div class="btn-carousel">
+        <a href="/projects">
+          <button class="btn">View Projects</button>
+        </a>
+      </div>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>Design Projects</h3>
+      <p class="carousel-text">I have some experience in design tools and software such as Photoshop and Illustrator, as well as 3D modelling 
+        software including Blender. I have used these tools to create various designs and models for projects.</p>
+
+      <section class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="assets/img/earth_roast.jpg" alt="Earth Melting Over a Fire">
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/img/ve_day.jpg" alt="VE Day Flag Design">
+          </div>
+
+          <div class="carousel-slide">
+            <img src="assets/img/donut.jpg" alt="Blender Donut Model">
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/img/3d_graphics.jpg" alt="Computer Graphics 3D Landscape">
+          </div>
+        </div>
+      
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </section>
+      <div class="btn-carousel">
+        <a href="/projects">
+          <button class="btn">View Projects</button>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<br>
