@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
 
 <body class="title-page"></body>
@@ -14,16 +14,16 @@
       <a href="/">Lewis Wray</a>
     </div>
     <ul class="nav-links">
-      <li><a href="{{ site.baseurl }}/">Home</a></li>
+      <li><a href="./">Home</a></li>
       <!-- <li><a href="/projects">Projects</a></li> -->
       <div class="dropdown">
         <a class="dropbtn">Projects 
           <i class="down-arrow">▼</i>
         </a>
         <div class="dropdown-content">
-          <a href="{{ site.baseurl }}/projects_game">Unity Games</a>
+          <a href="./projects_game">Unity Games</a>
           <a href="./projects_web">Websites</a>
-          <a href="/projects_design">Design Projects</a>
+          <a href="./projects_design">Design Projects</a>
         </div>
       </div> 
       <li><a href="#">Education</a></li>
@@ -43,6 +43,6 @@
     <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
 
-  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
