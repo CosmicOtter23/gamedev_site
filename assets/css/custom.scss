@@ -29,9 +29,6 @@
 .inner {
     max-width: 60vw;
 }
-p {
-    font-size: large;
-}
 .btn-carousel {
     padding: 2px;
     display: flex;
@@ -55,6 +52,68 @@ p {
 .dividing-line {
     border-top: 2px solid #000000;
     margin: 20px 0;
+}
+
+// Education Grid
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    padding: 10px;
+    gap: 10px;
+    margin: 0 auto;
+    // max-width: 40vw;
+}
+.grid-cell {
+    font-size: 100%;
+}
+
+// Project Layout
+.game-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Game Title */
+.game-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Game Meta Information */
+.game-meta {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.game-meta span {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Game Description */
+.game-description {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Game Screenshot Styling */
+.game-screenshot {
+    // display: inline;
+    max-width: 30%;
+    height: auto;
+    border-radius: 0px;
+    margin: 15px;
+    float: right;
+    border-color: black;
+    border-width: 5px;
+    padding: 0px;
 }
 
 // Navbar
@@ -304,12 +363,8 @@ p {
 }
 
 .tab-content {
-    display: none;
+    display: block;
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
-}
-
-.tab-content.active {
-    display: block;
 }
