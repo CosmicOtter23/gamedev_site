@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-</head>
+---
+layout: base
+---
 
 <body class="title-page">
   <header class="inner">
@@ -13,19 +8,14 @@
     <h5 style="color: white;" class="subtitle">{{ page.subtitle }}</h5>
   </header>
 
-  <h1>All posts</h1>
-  {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-
   <div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
+    <section id="main_content" class="inner post-text">
       {{ content }}
+      <!-- <video width="100%" controls>
+        <source src="./../assets/vid/ninja-blob" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> -->
     </section>
   </div>
-
-  <footer>
-    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
-  </footer>
 </body>
 </html>
