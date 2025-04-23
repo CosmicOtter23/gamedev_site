@@ -6,6 +6,9 @@
     --light-grey: #555;
 }
 
+p {
+    font-size: 130%;
+}
 .heading {
     color: white;
     text-align: left;
@@ -20,6 +23,10 @@
 }
 .title-subheading {
     color: white;
+    text-align: center;
+}
+.title-text {
+    font-size: 150%;
     text-align: center;
 }
 .profile_img {
@@ -66,7 +73,6 @@
 
 .post-text {
     text-align: justify;
-    font-size: 130%;
 }
 
 .post-image {

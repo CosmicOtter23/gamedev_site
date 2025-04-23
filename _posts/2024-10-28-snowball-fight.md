@@ -4,7 +4,7 @@ layout: post
 permalink: snowball-fight
 ---
 
-I found a second YouTube tutorial from the same creator that was intended to be a direct continuation from the first, developing skills learned and introducing new intermediate concepts. The game’s mechanics are very similar to the first, adopting the same 2D platformer elements, but with a different objective. While controls and mechanics remained largely unchanged, the goal of the game evolved from “reach the end of the level” to “beat your opponent”. This allowed me to rely on skills I already possessed and was confident I could replicate with ease, and instead focus on implementing new features and learning new skills. I learned how to have two players controlled simultaneously as well as facilitate two player health bars as a scoring system. 
+I found a second YouTube tutorial <a href="https://youtube.com/playlist?list=PLiyfvmtjWC_Ugm9c9Q7WaoRFGBZh_Z6ys&si=SniyTXf9uHX9vivs">(link)</a> from the same creator that was intended to be a direct continuation from the first, developing skills learned and introducing new intermediate concepts. The game’s mechanics are very similar to the first, adopting the same 2D platformer elements, but with a different objective. While controls and mechanics remained largely unchanged, the goal of the game evolved from “reach the end of the level” to “beat your opponent”. This allowed me to rely on skills I already possessed and was confident I could replicate with ease, and instead focus on implementing new features and learning new skills. I learned how to have two players controlled simultaneously as well as facilitate two player health bars as a scoring system. 
 
 ![Image 1](./assets/img/snowball_fight2.jpg){:.post-image}
 
