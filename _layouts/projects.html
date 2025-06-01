@@ -10,7 +10,7 @@ layout: base
 <div id="main_content_wrap" class="outer">
   <section id="main_content" class="inner">
     <div class="tab-container">
-      {% if page.title == "Unity Games" %}
+      <!-- {% if page.title == "Unity Games" %}
         <div class="tab active">Unity Games</div>
         <a href="./projects_web" class="tab">Websites</a>
         <a href="./projects_design" class="tab">Design Projects</a>
@@ -22,6 +22,13 @@ layout: base
         <a href="./projects_game" class="tab">Unity Games</a>
         <a href="./projects_web" class="tab">Websites</a>
         <div class="tab active">Design Projects</div>
+      {% endif %} -->
+      {% if page.title == "Unity Games" %}
+        <div class="tab active">Unity</div>
+        <a href="./projects_unreal" class="tab">Unreal</a>
+      {% elsif page.title == "Unreal Games" %}
+        <a href="./projects_unity" class="tab">Unity</a>
+        <div class="tab active">Unreal</div>
       {% endif %}
     </div>
 
