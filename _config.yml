@@ -21,9 +21,9 @@
 title: Lewis Wray
 email: lewisdwray@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A computer science graduate with experience in game development and web development.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Technical Designer
+baseurl: "/gamedev_site" # the subpath of your site, e.g. /blog
+url: "https://cosmicotter23.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
