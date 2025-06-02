@@ -213,7 +213,10 @@ p {
     .nav-links {
       display: none;
       flex-direction: column;
-      position: absolute;
+      // position: absolute;
+      position: fixed;
+      top: 0;
+      left: 0;
       top: 60px;
       right: 0;
       background-color: var(--dark-grey);
@@ -232,13 +235,13 @@ p {
       display: flex;
     }
   
-    .nav-active {
+    .nav-links.nav-active {
       display: flex;
     }
   
     /* Burger Animation */
     .toggle .line1 {
-      transform: rotate(-45deg) translate(-5px, 6px);
+      transform: rotate(-50deg) translate(-5px, 8px);
     }
   
     .toggle .line2 {
@@ -246,7 +249,7 @@ p {
     }
   
     .toggle .line3 {
-      transform: rotate(45deg) translate(-5px, -6px);
+      transform: rotate(50deg) translate(-5px, -8px);
     }
   }
 
