@@ -4,6 +4,13 @@ layout: post
 permalink: shadow-thief
 ---
 
+<div class="home-video">
+  <video controls class="video-video">
+    <source src="{{ '/assets/vid/shadow-thief-video.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>  
+</div> 
+
 In the summer of 2021, after I had completed my A-Level exams, my friends and I had some free time, so we decided to host a game jam among ourselves. We each chose two themes or topics and put them all into a randomiser and drew two each. The task was to make a game in a weekend that in some way was based around the two drawn themes. My two were “negative space” and “you are in a house that is not yours”. My first thought upon reading negative space was a stealth game, in which the player must stay in the dark sections of a level in order to avoid being seen. This idea worked conveniently with the other theme, as the player could be trying to avoid detection in someone’s house. 
 
 ![Image 1](assets/img/shadow_thief.jpg){:.post-image}

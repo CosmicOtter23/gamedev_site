@@ -4,6 +4,13 @@ layout: post
 permalink: ninja-blob
 ---
 
+<div class="home-video">
+  <video controls class="video-video">
+    <source src="{{ '/assets/vid/ninja-blob.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>  
+</div> 
+
 This was the first game I ever made with Unity in the summer of 2019, after I had completed my GCSEs. I used a YouTube tutorial by Games Plus James <a href="https://youtube.com/playlist?list=PLiyfvmtjWC_Up8XNvM3OSqgbJoMQgHkVz">(link)</a>, a beginner tutorial for creating one's first game. This was a 2D platformer game that had small combat elements also. It was a good tutorial to follow as it introduced me to many beginner concepts I was previously unaware of, such as how to control the player through scripting and creating behaviour for the enemies to attack and react to the player. I started by creating a simple level with a few blocks that the player can run across to the exit. I then added an enemy that the player would have to fight and beat, using their melee and ranged weapons. 
 
 ![Image 1](./assets/img/ninja_blob.jpg){:.post-image}

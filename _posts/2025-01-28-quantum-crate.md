@@ -4,6 +4,13 @@ layout: post
 permalink: quantum-crate
 ---
 
+<div class="home-video">
+  <video controls class="video-video">
+    <source src="{{ '/assets/vid/quantum-crate-video.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>  
+</div> 
+
 This a project I completed for A-level computer science coursework. The project brief was to create a piece of software that demonstrated the implementation of complex algorithms. I was given a list of algorithms that I could potentially try to integrate into my project, and I could choose which form of project would best present them. Many students chose to create database systems as we had learned about these during the course. However, I decided to make a game because I already had some experience with Unity so would not need to learn any new software from scratch, and I would be able to implement complex algorithms such as A* pathfinding, pixel perfect collision systems and finite state machines. Because the goal of the project was to showcase our understanding of complex algorithms, I thought it best to make my game a genre I was familiar with, so I started to make another platform-based shooter like snowball fight. The difference in this game was that it would be a roguelike single-player game, in which the player fights waves of enemies instead of another player. 
 
 ![Image 1](assets/img/quantum_crate.jpg){:.post-image}
