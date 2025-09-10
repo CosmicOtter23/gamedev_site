@@ -1,0 +1,39 @@
+---
+layout: base
+---
+<header class="inner">
+  <h1 class="heading">{{ page.title | default: site.title }}</h1>
+</header>
+
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+    <div class="about-container">
+      <img src="assets/img/about_img.jpg" alt="Photo of me in Queensferry, Scotland">
+      <p class="title-text">
+          My name is Lewis Wray and I am a technical designer, proficient in Unity and Unreal Engine. I like to imagine new exciting mechanics then make them into engaging gameplay experiences that are centred on how I want players to feel.
+      </p>
+    </div>
+    <div class="tab-container">
+      <div>
+        <h3>Programming</h3>
+        <p class="about-text">
+          I first started learning programming when I was in high school and wanted to make my own games, so I learned C# programming for Unity. I made a few 2D games in spare time and dedicated my skills to A-Level Computer Science coursework too. I decided to expand my programming experience in higher education, studying BSc Computer Science at The University of Leeds. Through this course, I learned to program in a wide range of languages including C, C++, Java, and Python. I have since used my programming skills to make games, websites and apps. 
+        </p>
+        <h3>Design</h3>
+        <p class="about-text">
+          I have always had a passion for video games and an eye for design, so I decided to study MA Games Design at The University of Lancashire. Upon beginning this course, I wanted to find an area of game development that allowed me to use my programming and technical skills and well as my creative instincts, so focused on technical design. Over the year, I made multiple games using Unreal Engine and its visual scripting blueprints. I embraced the ideas of iterative design and player feel to create enjoyable and visually exciting mechanics in a variety of genres. 
+        </p>
+      </div>
+    </div>
+  
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/lewis-wray-3b0b61226/"><img style="width: 60px; " src="./assets/img/linkedin_logo.jpg" alt="LinkedIn logo"></a>
+    </div>
+    <div class="contact">
+      <a href="{{ '/assets/img/lewis-wray-cv.pdf' | relative_url }}" target="_blank" class="btn">View CV/Resume</a>
+    </div>
+    <div class="contact">
+      <p><a href="mailto:lewisdwray@gmail.com">lewisdwray@gmail.com</a></p>
+    </div>
+  </section>
+</div>

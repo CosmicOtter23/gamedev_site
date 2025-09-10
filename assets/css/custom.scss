@@ -29,6 +29,10 @@ p {
     font-size: 150%;
     text-align: center;
 }
+.about-text {
+    font-size: 150%;
+    text-align: left;
+}
 .profile_img {
     border-radius: 50%;
     width: 100px;
@@ -421,4 +425,22 @@ p {
   max-width: 100%;
   margin: 0 auto;
   object-fit: cover;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-container {
+  display: flex;
+  align-items: center; /* vertically align image + text */
+  gap: 20px; /* spacing between image and text */
+}
+.about-container img {
+  width: 50%; /* control image size */
+  height: auto;
+}
+.about-container p {
+  text-align: left;
 }
