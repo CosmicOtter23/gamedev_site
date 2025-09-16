@@ -5,11 +5,16 @@ layout: base
   <h1 class="title-heading">{{ page.title | default: site.title }}</h1>
   <h3 class="title-subheading">{{ page.subtitle }}</h3>
   <br>
-  <img src="./assets/img/profile_pic.jpg" alt="Lewis image" class="profile_img">
+  <!-- <img src="./assets/img/profile_pic.jpg" alt="Lewis image" class="profile_img"> -->
 </header>
 
 <div id="main_content_wrap" class="outer">
   <section id="main_content" class="inner">
+
+    <div class="central">
+      <h1>My work:</h1>
+    </div>
+
     <div class="home-video">
       <video controls class="video-video">
         <source src="{{ '/assets/vid/portfolio_video.mp4' | relative_url }}" type="video/mp4">
@@ -17,6 +22,7 @@ layout: base
       </video>  
     </div> 
     <br>
+
     <!-- <div class="btn-carousel">
       <a href="./projects_unreal">
         <button class="btn">View Projects</button>
@@ -135,248 +141,279 @@ layout: base
     </div>
   </section> -->
   
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/mr_nightcrawler.jpg" alt="Nightcrawler in Marvel Rivals Screenshot" class="game-screenshot">
-    </figure>
-    <!-- Game Title -->
-    <h1 class="game-title">Nightcrawler in Marvel Rivals</h1>
+    <section class="game-container">
+      <!-- Game Screenshot -->
+      <figure>
+        <img src="./assets/img/mr_nightcrawler.jpg" alt="Nightcrawler in Marvel Rivals Screenshot" class="game-screenshot">
+      </figure>
+      <!-- Game Title -->
+      <h1 class="game-title">Nightcrawler in Marvel Rivals</h1>
 
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2025</span>
-      <span><strong>Project Type:</strong> Personal</span>
-      <span><strong>Genre:</strong> Hero Shooter</span>
+      <!-- Meta Information (Year and Genre) -->
+      <div class="game-meta">
+        <span><strong>Year:</strong> 2025</span>
+        <span><strong>Project Type:</strong> Personal</span>
+        <span><strong>Genre:</strong> Hero Shooter</span>
+      </div>
+
+      <!-- Game Description -->
+      <p class="game-description">
+        A custom character concept for popular hero shooter Marvel Rivals
+      </p>
+
+      <a href="./mr-nightcrawler"><button class="btn">View Project</button></a>
+    </section>
+
+    <section class="game-container">
+      <!-- Game Screenshot -->
+      <figure>
+        <img src="./assets/img/tower_ascent.jpg" alt="Tower Ascent Screenshot" class="game-screenshot">
+      </figure>
+      <!-- Game Title -->
+      <h1 class="game-title">Tower Ascent</h1>
+
+      <!-- Meta Information (Year and Genre) -->
+      <div class="game-meta">
+        <span><strong>Year:</strong> 2025</span>
+        <span><strong>Project Type:</strong> Academic</span>
+        <span><strong>Genre:</strong> Combat Platformer</span>
+      </div>
+
+      <!-- Game Description -->
+      <p class="game-description">
+        A game to test and demonstrate my Unreal Engine 5 knowledge
+      </p>
+
+      <a href="./tower-ascent"><button class="btn">View Project</button></a>
+    </section>
+
+    <section class="game-container">
+      <!-- Game Screenshot -->
+      <figure>
+        <img src="./assets/img/ballbot_arena.jpg" alt="Ballbot Arena Screenshot" class="game-screenshot">
+      </figure>
+      <!-- Game Title -->
+      <h1 class="game-title">Ballbot Arena</h1>
+
+      <!-- Meta Information (Year and Genre) -->
+      <div class="game-meta">
+        <span><strong>Year:</strong> 2025</span>
+        <span><strong>Project Type:</strong> Academic</span>
+        <span><strong>Genre:</strong> Multiplayer Artillery</span>
+      </div>
+
+      <!-- Game Description -->
+      <p class="game-description">
+        A project that showcases a wide variety of technical design skills
+      </p>
+
+      <a href="./ballbot-arena"><button class="btn">View Project</button></a>
+    </section>
+
+    <div class="central">
+      <button type="button" id="show-more-btn" class="btn btn-show-more" style="margin: 0;"
+        onclick="document.getElementById('more-projects').style.display='block';
+        document.getElementById('show-more-btn').style.display='none';">
+        Show more
+      </button>
     </div>
 
-    <!-- Game Description -->
-    <p class="game-description">
-      A custom character concept for popular hero shooter Marvel Rivals
-    </p>
+    <div id="more-projects" style="display: none;">
 
-    <a href="./mr-nightcrawler"><button class="btn">View Project</button></a>
-  </section>
+      <section class="game-container">
+        <!-- Game Screenshot -->
+        <figure>
+          <img src="./assets/img/energy_fist.jpg" alt="Energy Fist Screenshot" class="game-screenshot">
+        </figure>
+        <!-- Game Title -->
+        <h1 class="game-title">Energy Fist</h1>
 
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/tower_ascent.jpg" alt="Tower Ascent Screenshot" class="game-screenshot">
-    </figure>
-    <!-- Game Title -->
-    <h1 class="game-title">Tower Ascent</h1>
+        <!-- Meta Information (Year and Genre) -->
+        <div class="game-meta">
+          <span><strong>Year:</strong> 2025</span>
+          <span><strong>Project Type:</strong> Academic</span>
+          <span><strong>Genre:</strong> First-Person Adventure</span>
+        </div>
 
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2025</span>
-      <span><strong>Project Type:</strong> Academic</span>
-      <span><strong>Genre:</strong> Combat Platformer</span>
-    </div>
+        <!-- Game Description -->
+        <p class="game-description">
+          A project that pushed the limits of my newly acquired Unreal skills. 
+        </p>
 
-    <!-- Game Description -->
-    <p class="game-description">
-      A game to test and demonstrate my Unreal Engine 5 knowledge
-    </p>
+        <a href="./energy-fist"><button class="btn">View Project</button></a>
+      </section>
 
-    <a href="./tower-ascent"><button class="btn">View Project</button></a>
-  </section>
+      <section class="game-container">
+        <!-- Game Screenshot -->
+        <figure>
+          <img src="./assets/img/betrayal_dungeon.jpg" alt="Betrayal Dungeon Screenshot" class="game-screenshot">
+        </figure>
+        <!-- Game Title -->
+        <h1 class="game-title">Betrayal Dungeon</h1>
 
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/ballbot_arena.jpg" alt="Ballbot Arena Screenshot" class="game-screenshot">
-    </figure>
-    <!-- Game Title -->
-    <h1 class="game-title">Ballbot Arena</h1>
+        <!-- Meta Information (Year and Genre) -->
+        <div class="game-meta">
+          <span><strong>Year:</strong> 2024</span>
+          <span><strong>Project Type:</strong> Academic</span>
+          <span><strong>Genre:</strong> Puzzle</span>
+        </div>
 
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2025</span>
-      <span><strong>Project Type:</strong> Academic</span>
-      <span><strong>Genre:</strong> Multiplayer Artillery</span>
-    </div>
+        <!-- Game Description -->
+        <p class="game-description">
+          The first project of my MA Games Design course: a top-down puzzle game.
+        </p>
 
-    <!-- Game Description -->
-    <p class="game-description">
-      A project that showcases a wide variety of technical design skills
-    </p>
+        <a href="./betrayal-dungeon"><button class="btn">View Project</button></a>
+      </section>
 
-    <a href="./ballbot-arena"><button class="btn">View Project</button></a>
-  </section>
+      <section class="game-container">
+        <!-- Game Screenshot -->
+        <figure>
+          <img src="./assets/img/nectar_collector.jpg" alt="Nectar Collector Screenshot" class="game-screenshot">
+        </figure>
+        <!-- Game Title -->
+        <h1 class="game-title">Nectar Collector</h1>
 
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/energy_fist.jpg" alt="Energy Fist Screenshot" class="game-screenshot">
-    </figure>
-    <!-- Game Title -->
-    <h1 class="game-title">Energy Fist</h1>
+        <!-- Meta Information (Year and Genre) -->
+        <div class="game-meta">
+          <span><strong>Year:</strong> 2025</span>
+          <span><strong>Project Type:</strong> Game Jam</span>
+          <span><strong>Genre:</strong> Survival</span>
+        </div>
 
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2025</span>
-      <span><strong>Project Type:</strong> Academic</span>
-      <span><strong>Genre:</strong> First-Person Adventure</span>
-    </div>
+        <!-- Game Description -->
+        <p class="game-description">
+          My submission for Itch.io Mini Jam 193: Hunters
+        </p>
 
-    <!-- Game Description -->
-    <p class="game-description">
-      A project that pushed the limits of my newly acquired Unreal skills. 
-    </p>
+        <a href="./nectar-collector"><button class="btn">View Project</button></a>
+      </section>
 
-    <a href="./energy-fist"><button class="btn">View Project</button></a>
-  </section>
+      <section class="game-container">
+        <!-- Game Screenshot -->
+        <figure>
+          <img src="./assets/img/the_wall.jpg" alt="The Wall Screenshot" class="game-screenshot">
+        </figure>
 
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/betrayal_dungeon.jpg" alt="Betrayal Dungeon Screenshot" class="game-screenshot">
-    </figure>
-    <!-- Game Title -->
-    <h1 class="game-title">Betrayal Dungeon</h1>
+        <!-- Game Title -->
+        <h1 class="game-title">The Wall</h1>
 
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2024</span>
-      <span><strong>Project Type:</strong> Academic</span>
-      <span><strong>Genre:</strong> Puzzle</span>
-    </div>
+        <!-- Meta Information (Year and Genre) -->
+        <div class="game-meta">
+          <span><strong>Year:</strong> 2021</span>
+          <span><strong>Project Type:</strong> Personal</span>
+          <span><strong>Genre:</strong> Trivia</span>
+        </div>
 
-    <!-- Game Description -->
-    <p class="game-description">
-      The first project of my MA Games Design course: a top-down puzzle game.
-    </p>
+        <!-- Game Description -->
+        <p class="game-description">
+          I made this game in University to test myself and the extent of what I remembered of Unity, but with the added difficulty of 3D physics.
+        </p>
+        
+        <a href="./the-wall"><button class="btn">View Project</button></a>
+      </section>
 
-    <a href="./betrayal-dungeon"><button class="btn">View Project</button></a>
-  </section>
+      <section class="game-container">
+        <!-- Game Screenshot -->
+        <figure>
+          <img src="./assets/img/shadow_thief.jpg" alt="Shadow Thief Screenshot" class="game-screenshot">
+        </figure>
 
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/the_wall.jpg" alt="The Wall Screenshot" class="game-screenshot">
-    </figure>
+        <!-- Game Title -->
+        <h1 class="game-title">Shadow Thief</h1>
 
-    <!-- Game Title -->
-    <h1 class="game-title">The Wall</h1>
+        <!-- Meta Information (Year and Genre) -->
+        <div class="game-meta">
+          <span><strong>Year:</strong> 2021</span>
+          <span><strong>Project Type:</strong> Personal</span>
+          <span><strong>Genre:</strong> Stealth</span>
+        </div>
 
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2021</span>
-      <span><strong>Project Type:</strong> Personal</span>
-      <span><strong>Genre:</strong> Trivia</span>
-    </div>
+        <!-- Game Description -->
+        <p class="game-description">
+          My submission for a game jam organised with a group of friends after we had finished our A-levels. I made the entire game in one weekend.
+        </p>
+        
+        <a href="./shadow-thief"><button class="btn">View Project</button></a>
+      </section>
 
-    <!-- Game Description -->
-    <p class="game-description">
-      I made this game in University to test myself and the extent of what I remembered of Unity, but with the added difficulty of 3D physics.
-    </p>
-    
-    <a href="./the-wall"><button class="btn">View Project</button></a>
-  </section>
+      <section class="game-container">
+        <!-- Game Screenshot -->
+        <figure>
+          <img src="./assets/img/quantum_crate.jpg" alt="Quantum Crate Screenshot" class="game-screenshot">
+        </figure>
+        
+        <!-- Game Title -->
+        <h1 class="game-title">Quantum Crate</h1>
 
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/shadow_thief.jpg" alt="Shadow Thief Screenshot" class="game-screenshot">
-    </figure>
+        <!-- Meta Information (Year and Genre) -->
+        <div class="game-meta">
+          <span><strong>Year:</strong> 2020</span>
+          <span><strong>Project Type:</strong> Academic</span>
+          <span><strong>Genre:</strong> Platform Roguelite</span>
+        </div>
 
-    <!-- Game Title -->
-    <h1 class="game-title">Shadow Thief</h1>
+        <!-- Game Description -->
+        <p class="game-description">
+          This game was made as my A-level Computer Science project. I made a game similar to ones I had made before but was able to dedicate more time to it so added more features.
+        </p>
+        
+        <a href="./quantum-crate"><button class="btn">View Project</button></a>
+      </section>
 
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2021</span>
-      <span><strong>Project Type:</strong> Personal</span>
-      <span><strong>Genre:</strong> Stealth</span>
-    </div>
+      <section class="game-container">
+        <!-- Game Screenshot -->
+        <figure>
+          <img src="./assets/img/snowball_fight.jpg" alt="Snowball Fight Screenshot" class="game-screenshot">
+        </figure>
+        
+        <!-- Game Title -->
+        <h1 class="game-title">Snowball Fight</h1>
 
-    <!-- Game Description -->
-    <p class="game-description">
-      My submission for a game jam organised with a group of friends after we had finished our A-levels. I made the entire game in one weekend.
-    </p>
-    
-    <a href="./shadow-thief"><button class="btn">View Project</button></a>
-  </section>
+        <!-- Meta Information (Year and Genre) -->
+        <div class="game-meta">
+          <span><strong>Year:</strong> 2019</span>
+          <span><strong>Project Type:</strong> Personal</span>
+          <span><strong>Genre:</strong> Platform Fighter</span>
+        </div>
 
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/quantum_crate.jpg" alt="Quantum Crate Screenshot" class="game-screenshot">
-    </figure>
-    
-    <!-- Game Title -->
-    <h1 class="game-title">Quantum Crate</h1>
+        <!-- Game Description -->
+        <p class="game-description">
+          The second game I made built upon the skills I learned from the first, using a more intermediate Unity course. I created my own sprites to personalise the game.
+        </p>
+        
+        <a href="./snowball-fight"><button class="btn">View Project</button></a>
+      </section>
+      
+      <section class="game-container">
+        <!-- Game Screenshot -->
+        <figure>
+          <img src="./assets/img/ninja_blob.jpg" alt="Ninja Blob Screenshot" class="game-screenshot">
+        </figure>
+        <!-- Game Title -->
+        <h1 class="game-title">Ninja Blob</h1>
 
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2020</span>
-      <span><strong>Project Type:</strong> Academic</span>
-      <span><strong>Genre:</strong> Platform Roguelite</span>
-    </div>
+        <!-- Meta Information (Year and Genre) -->
+        <div class="game-meta">
+          <span><strong>Year:</strong> 2018</span>
+          <span><strong>Project Type:</strong> Personal</span>
+          <span><strong>Genre:</strong> Platformer</span>
+        </div>
 
-    <!-- Game Description -->
-    <p class="game-description">
-      This game was made as my A-level Computer Science project. I made a game similar to ones I had made before but was able to dedicate more time to it so added more features.
-    </p>
-    
-    <a href="./quantum-crate"><button class="btn">View Project</button></a>
-  </section>
+        <!-- Game Description -->
+        <p class="game-description">
+          A sidescrolling platformer made using a YouTube Tutorial. My first introduction to the Unity game engine and game development.
+        </p>
 
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/snowball_fight.jpg" alt="Snowball Fight Screenshot" class="game-screenshot">
-    </figure>
-    
-    <!-- Game Title -->
-    <h1 class="game-title">Snowball Fight</h1>
-
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2019</span>
-      <span><strong>Project Type:</strong> Personal</span>
-      <span><strong>Genre:</strong> Platform Fighter</span>
-    </div>
-
-    <!-- Game Description -->
-    <p class="game-description">
-      The second game I made built upon the skills I learned from the first, using a more intermediate Unity course. I created my own sprites to personalise the game.
-    </p>
-    
-    <a href="./snowball-fight"><button class="btn">View Project</button></a>
-  </section>
-  
-  <section class="game-container">
-    <!-- Game Screenshot -->
-    <figure>
-      <img src="./assets/img/ninja_blob.jpg" alt="Ninja Blob Screenshot" class="game-screenshot">
-    </figure>
-    <!-- Game Title -->
-    <h1 class="game-title">Ninja Blob</h1>
-
-    <!-- Meta Information (Year and Genre) -->
-    <div class="game-meta">
-      <span><strong>Year:</strong> 2018</span>
-      <span><strong>Project Type:</strong> Personal</span>
-      <span><strong>Genre:</strong> Platformer</span>
-    </div>
-
-    <!-- Game Description -->
-    <p class="game-description">
-      A sidescrolling platformer made using a YouTube Tutorial. My first introduction to the Unity game engine and game development.
-    </p>
-
-    <a href="./ninja-blob"><button class="btn">View Project</button></a>
-  </section>
+        <a href="./ninja-blob"><button class="btn">View Project</button></a>
+      </section>
+  </div>
   
   <div class="contact">
     <a href="https://www.linkedin.com/in/lewis-wray-3b0b61226/"><img style="width: 60px; " src="./assets/img/linkedin_logo.jpg" alt="LinkedIn logo"></a>
-  </div>
-  <div class="contact">
-     <a href="{{ '/assets/img/lewis-wray-cv.pdf' | relative_url }}" target="_blank" class="btn">View CV/Resume</a>
-  </div>
-  <div class="contact">
-    <p><a href="mailto:lewisdwray@gmail.com">lewisdwray@gmail.com</a></p>
+    <a href="https://cosmicotters.itch.io/"><img style="width: 60px; " src="./assets/img/itch.jpg" alt="Itch.io logo"></a>
+    <a href="{{ '/assets/img/lewis-wray-cv.pdf' | relative_url }}"><img style="width: 60px; " src="./assets/img/cv.jpg" alt="CV logo"></a>
+    <a href="mailto:lewisdwray@gmail.com"><img style="width: 60px; " src="./assets/img/mail.jpg" alt="Mail logo"></a>
   </div>
   
 </div>

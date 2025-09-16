@@ -20,10 +20,12 @@ p {
 .title-heading {
     color: white;
     text-align: center;
+    font-size: 500%;
 }
 .title-subheading {
     color: white;
     text-align: center;
+    font-size: 300%;
 }
 .title-text {
     font-size: 150%;
@@ -73,7 +75,16 @@ p {
 .contact {
     display: flex;
     justify-content: center;
-    // margin: 20px 0;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.contact img {
+    width: 60px;   /* set square size */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 15px; /* optional rounded corners */
+    transition: transform 0.2s;
 }
 
 .post-text {
@@ -443,4 +454,14 @@ p {
 }
 .about-container p {
   text-align: left;
+}
+
+.btn-show-more {
+  background-color: #666;
+}
+
+.central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
